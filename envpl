@@ -1,3 +1,4 @@
+#!perl
 use File::Spec::Functions qw( rel2abs catfile );
 use List::MoreUtils qw( any );
 use Win32::API;
@@ -38,7 +39,7 @@ else {
 
 my $SendMessage = new Win32::API("user32", "SendMessage", 'NNNP', 'N') or
     die "Cound't create SendMessage: $!\n";
-my $RetVal = $SendMessage->Call(HWND_BROADCAST, WM_SETTINGCHANGE,0,'Enviroment');
+my $RetVal = $SendMessage->Call(HWND_BROADCAST, WM_SETTINGCHANGE,0,'Environment');
 
 
 __END__
