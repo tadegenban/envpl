@@ -1,0 +1,18 @@
+=pod
+
+=head1 NAME
+
+    envpl -- set my current perl env for windows
+=head2 DESCRIPTION
+
+    envpl is a command to set the PATH and PERL5LIB Enviroment varible for you .
+
+    Run 'envpl' in will add current directory's './bin' to PATH and './lib' to PERL5LIB at first place
+
+    If current directory's './bin' and './lib' already at PATH's and PERL5LIB's first place,
+
+    It will remove them for you .
+
+    So, you can use 'envpl' to switch bewteen two enviroment status for devloping
+
+=cut
