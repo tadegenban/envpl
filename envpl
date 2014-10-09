@@ -48,11 +48,11 @@ __END__
 
 =head1 NAME
 
-    envpl -- set my current perl env for windows
+    envpl -- switch my current perl env for windows permanently by edit registry
 
 =head1 DESCRIPTION
 
-    envpl is a command to set the PATH and PERL5LIB Enviroment varible for you .
+    envpl is a command to set the PATH and PERL5LIB Environment varible permanently.
 
     Run 'envpl' in will add current directory's './bin' to PATH and './lib' to PERL5LIB at first place
 
@@ -61,5 +61,7 @@ __END__
     It will remove them for you .
 
     So, you can use 'envpl' to switch bewteen two enviroment status for devloping
+
+    The Environment Variable is changed permanently because we edit the registry .
 
 =cut
